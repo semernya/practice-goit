@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 7</title>
+  </head>
+  <body>
+    <ul id="menu" class="menu">
+      <li class="menu-item">home</li>
+      <li class="menu-item">about</li>
+      <li class="menu-item">gallery</li>
+      <li>blog</li>
+    </ul>
+
+    <img
+      class="image"
+      src="https://picsum.photos/id/9/320/240"
+      alt="A laptop"
+      width="300"
+    />
+
+    <p class="text super">Username: <span class="sub-text">Mango</span></p>
+
+    <a class="link is-active" href="">A random link</a>
+
+    <img
+      class="img"
+      src="https://picsum.photos/id/15/320/240"
+      alt="Rocks and waterfall"
+      width="300"
+    />
+
+    <button type="button" data-action="save">Save text</button>
+    <button type="button" data-action="close">Close editor</button>
+
+    <div class="container">
+      <ul class="usernames">
+        <li>Mango</li>
+      </ul>
+    </div>
+
+    <p class="have-to-be-deleted-text">Random text content</p>
+
+    <article class="article">
+      <h2 class="title">Article title</h2>
+      <p class="text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, ipsa
+        quibusdam! <strong>Praesentium</strong> accusantium fugiat distinctio
+        quidem minima fugit eos, veniam, nam laboriosam deleniti nisi qui neque
+        explicabo perspiciatis, consectetur non.
+      </p>
+      <a class="link" href="">Read more</a>
+    </article>
+
+    <ul class="tech-list">
+      <li class="tech-list-item">HTML</li>
+      <li class="tech-list-item">CSS</li>
+      <li class="tech-list-item">JavaScript</li>
+    </ul>
+
+    <button id="single" class="btn">SINGLE CALLBACK</button>
+    <hr />
+    <button id="multiple" class="btn">MULTIPLE CALLBACKS</button>
+    <hr />
+    <button type="button" class="click-me-btn">Click me</button>
+    <hr />
+    <button type="button" class="js-clear">Clear output</button>
+    <div class="log-list"></div>
+
+    <hr />
+    <form class="form" autocomplete="off">
+      <input type="text" name="login" placeholder="Login" />
+      <input type="password" name="password" placeholder="Password" />
+      <button class="form-btn" type="submit">Register</button>
+    </form>
+
+    <hr />
+    <p>Selected option text: <span class="text-output">none</span></p>
+    <p>Selected option value: <span class="value-output">none</span></p>
+    <p>
+      <select class="pizza-select">
+        <option value="four_meats">Four Meats</option>
+        <option value="royal_cheese">Royal Cheese</option>
+        <option value="vegetarian">Vegetarian</option>
+        <option value="smoked_salmon">Smoked Salmon</option>
+      </select>
+    </p>
+
+    <hr />
+    <input type="text" class="text-input" />
+    <p>Text field value: <span class="output"></span></p>
+
+    <hr />
+    <button type="button" data-action="set">Set focus to input</button>
+    <button type="button" data-action="remove">Remove focus from input</button>
+    <br /><br />
+    <input type="text" class="focus-text-input" />
+
+    <script src="./js/module-7.js" type="module"></script>
+  </body>
+</html>
