@@ -317,3 +317,25 @@ focusTextInput.addEventListener("blur", () => {
   //коли нема фокусу на полі вводу - поле пусте
   focusTextInput.value = "";
 });
+
+
+// 7. reset() - метод, очищає дані з форми/елемента форми
+//event.target.elements - HTML-колекція елементів об'єкта, на якому викликали подію
+const loginForm = document.querySelector(".login-form");
+const sendFormInfo = (event) => {//ф-ція, що записує введені дані юзером в об'єкт
+  event.preventDefault();//по дефолту настройки скинуті, сторінка не перезавантажиться після відправки форми
+  const elCollection = event.target.elements;//хтмл-колекцію з елементів форми записано в змінну
+
+  if (elCollection.email.value === "" || elCollection.password.value === "") {//якщо 1 з полів пустий, виведено алерт 
+    alert("All form fields must be filled in!");
+  } else {//інакше створюється об'єкт куди записано дані, введені юзером
+    const formInfo = {
+      email: elCollection.email.value,
+      password: elCollection.password.value,
+    };
+    console.log(formInfo);
+  }
+  loginForm.reset(); //форма очиститься після відправки даних юзером
+}
+loginForm.addEventListener("submit", sendFormInfo);//створили слухач події відправки форми на форму loginForm
+
