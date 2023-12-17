@@ -136,11 +136,14 @@ afterPar.textContent =
 nameList.after(afterPar); //додали параграф після списку
 //Видалення елементів - element.remove()
 
-// innerHTML - вл-сть, зберігає вміст елемента, включно з тегами, у вигляді рядка. Значення, що повертається, — це завжди валідний HTML-код.
-// element.innerHTML = ''; - щвидке видалення вмісту елемента
-//Юзаємо, коли:
-// елемент element порожній
-//якщо потрібно повністю замінити вміст element
+/* 
+1. innerHTML - вл-сть, зберігає вміст елемента, включно з тегами, у вигляді рядка. Значення, що повертається, — це завжди валідний HTML-код.
+    element.innerHTML = ''; - щвидке видалення вмісту елемента
+    Юзаємо, коли:
+    елемент element порожній
+    якщо потрібно повністю замінити вміст element
+2. outerHTML - зберігає елемент (на якому викликана) + його зміст
+*/
 const article = document.querySelector(".article");
 const link = document.querySelector(".article .link");
 const title = document.querySelector(".article .title");
