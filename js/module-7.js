@@ -2,9 +2,11 @@
 /*
 element.querySelector('selector') - знайде 1 унікальний ел. з селектором selector
 element.querySelectorAll('selector') - поверне псевдомасив елементів списку з селкктором selector
+const createBtn = document.querySelector("[data-create]") - доступ до кнопки через її порожній дата-атрибут
 ('#selector') - ID-селектор
 ('selector') - селектор тега
 ('.selector') - селектор класу
+("[data-attribute]") - дата-атрибут
 */
 const menuList = document.querySelector("#menu");
 console.log(menuList);
